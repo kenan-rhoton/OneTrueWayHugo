@@ -6,11 +6,15 @@ tags = ["When Should I Use","Python"]
 
 +++
 
-[Python](https://python.org) is a beautiful language. It really drives home the message that simplicity can be powerful.
+[Python](https://python.org) is a beautiful language.
+
+Every language does have some kind of beauty to it (except for perhaps JavaScript), but Python really drives home the message that simplicity can be powerful.
 
 It's also incredibly deep, and it is probably the oldest designed language from the tribe of "We can make programming a creative experience."
 
-It also introduced me to the amazing concept of Test Driven Development, due to how much emphasis is made on it (and how much tooling there is) in the Python world, especially thanks to Django.
+Python is also a very flexible language, which uses dynamic typing to a great effect and allows you to mix programming paradigms in a natural way.
+
+And it introduced me to the amazing concept of Test Driven Development, due to how much emphasis is made on it (and how much tooling there is) in the Python world, especially thanks to Django.
 
 But let's get down to business...
 
@@ -27,12 +31,13 @@ It is a joy to program in Python, really.
 
 I think that, as a developer, there are some specific things to understand about Python.
 
-1. The Syntax is simple, but powerful
-2. Readability gives you Power and demands Responsibility
-3. Pip is your friend
-4. Virtualenv is your building block
-5. Read the docs, you will understand them easily
-6. Test all the things
+1. The Syntax is simple and very readable
+2. You have the power to do anything
+3. External libraries for the rest
+4. You will develop *fast*
+5. Great documentation
+6. It will be fun
+7. Objective and Functional
 
 ### The Python Syntax
 
@@ -57,34 +62,118 @@ You can both be very precise and very readable with Python's syntax.
 
 Also, although this is more a matter of opinion, I think indentation as part of the syntax is genius: everyone indents their code anyway. And for the whole "tabs vs spaces" arguments, you just need to agree on a code formatter and be done with it.
 
-### Readability: Power and Responsibility
+### Python Power!
 
-But with Great Readability comes Great Responsibility. And that is to actually use the readability.
+This would be an amazing name for a new Anime about Mutant Robosnakes.
 
-Consider the following "refactor" of the above code:
+But back to programming, Python is one of the languages with the most extensive and robust standard libraries that I know of.
 
-    from re import search
-    f = open('somefile.txt', 'r')
-    lines = f.readlines().sort()
-    for l in lines:
-        if search("potato", l): print(l,end='')
+In fact, the typical Python app doesn't have that many external dependencies other than whatever the framework you're using requires.
 
-It may not look much worse, but you do have to pay more attention to the code to know what its doing... Also it has a bug, it's missing a call to `f.close()` which you're quite likely to miss.
+Everything from advanced math to crypto to compression to emailing to files and persistence (even sqlite3!) is baked into the standard library for you to import.
 
-The point is, that if you don't devote a little time to writing good code, you're missing out on one of the main advantages of Python.
-Which makes me sad.
+Frankly, the main reason for external dependencies is mostly "I could do that, but since someone else already did it I may as well use it".
 
-### Pip, the Package Manager
+It really is amazing just how *easy* it is to build a complex system in Python.
 
-Python comes with a very important tool alongside: `pip`.
+Also, a very big thing I find in Python is that it is easy to implement both Object Oriented and Functional solutions, with a versatility that is hard to replicate in other languages ([Ruby](https://www.ruby-lang.org) tries, though)
 
-pip stands for "Packages in Python". Actually I just made that up. But it should stand for that, because that is what it does.
+### External libraries
 
-It functions much like every single other package manager, so we won't really spend much time on it.
+Python is a very mature language.
 
-Instead, let's talk about...
+This means that there are libraries for pretty much anything you can think of.
 
-### Virtualenv
+UI? [Library](https://docs.python.org/3.6/library/tkinter.html). Web Framework? [Library](https://www.djangoproject.com/). Machine Learning? [Library](https://github.com/tensorflow/tensorflow). YouTube video downloader? [Library](https://pypi.python.org/pypi/youtube_dl/2017.5.29). ASCII Cats? I don't know why but there's a [Library](https://pypi.python.org/pypi/cats/0.2.0) for that too.
 
-Before there was Docker, before there were things like Ruby's Bundler... there was the annoying problem of managing your dependencies.
+So this means it's actually very hard to come upt with a project idea where you will truly be "on your own" in Python, which is a great thing.
 
+### Fast development
+
+Developing in Python is *fast*.
+
+It is amazing just how intuitive, expressive yet powerful the language can be, and the amount of content in the standard library and external ones helps to not have to reinvent the wheel and focus on the problem.
+
+I also think its readability comes again with a lot of strength, as it is SO much easier to collaborate when you can easily understand what others have done.
+
+This, coupled with **very** smart decisions when it comes to how things are implemented, makes for a very natural development flow that produces results much quicker than many other languages.
+
+### The docs
+
+The documentation is *amazing*.
+
+Part of this really comes with being a mature language, but seriously, both the [Standard Library](https://docs.python.org/3/library/) and everything else is very extensively documented.
+
+Really, I think at this point, pretty much every single doubt you could possibly have with the language is either documented somewhere or is answered on [StackOverflow](https://stackoverflow.com/)
+
+### Fun, Fun, Fun!
+
+Python programming is fun!
+
+Ok, this is completely subjective, I confess, but I've heard it from multiple people (which has next to zero statistical value): Python is *fun*.
+
+I think that the main reason for this is that it is so fast to go from **zero** to **Prototype One** that it simply *feels satisfying*.
+
+And really, a happy developer is a better developer.
+
+### Objective and Functional
+
+The final aspect I want to touch on is how easy it is to use whatever programming paradigm you want to in Python.
+
+Are you a Brave Clojurist who thinks only in pure functions? Python can do it. Do you need to create a Class with all sorts of overloading shenanigans? Python can do it.
+
+This flexibility is part of what makes Python great: you are free to code in the **best way you can**.
+
+## What does Python suck at?
+
+So, we have a robust, versatile, easy, practical language. Where's the catch?
+
+Like every other language, Python is not the perfect solution to every single problem.
+And in fact it has some serious caveats as well as some minor deficiencies.
+
+To be concise, we'll name the most prominent.
+
+1. Not the fastest car in the race
+2. Wait, there's Python 2 and 3?
+3. \_\_init\_\_ and other fun things
+
+### Speed of a camel
+
+So Python is not the fastest language ever.
+It's really more like "trying not to be last" in that regard.
+
+Thankfully, that doesn't mean it's *terribly* slow, but clearly if you need to develop some very time-critical software, you should look elsewhere.
+
+Like a camel though, it's stable and lasts long, so it's very decent for things like Web Server Backends, where really, the net latency renders Python's response time irrelevant.
+
+But you won't be developing the next Real-Time Physics Engine for a AAA game in Python anytime soon...
+
+### Python 2 vs Python 3
+
+This surprisingly is still a problem, even thought you'd think that it'd be clear that people should just use Python 3 because the number is bigger (No one is using Java 5 anymore, right? Right?).
+
+Python 3 was released in 2008, so the excuse of "X library is only in Python 2" is increasingly becoming less credible. I mean, there's a 99% chance that an equivalent Library exists for Python 3 and you're just lazy.
+
+### Those weird underscores
+
+Why exactly is the function to auto-convert a class to a string called "\_\_str\_\_"?. Why does prepending a variable with double underscore have a special meaning in a class? For that matter, why do I need to create an empty \_\_init\_\_.py file to make my project into a package.
+
+These and other mysterious questions have been very annoying to people who, sure, found the answer to whatever they were looking for quite quickly upon searching, and then groaned loudly.
+
+Because let's be honest, that's not the most intuitive and readable thing...
+
+## So... When Should I Use Python?
+
+Yes, Python is hard to live without.
+
+Obviously the first thing to consider is if your project has high execution speed requirements, which is the first aspect that Python flunks.
+
+Secondly, it's a language that just doesn't reach a true low level in any case, so for some "necessarily-low-level" things (such as drivers) you can't really consider it.
+
+However, it is a *great* language for any team projects because of its readability. And because it is very robust, it's a great choice for companies. I mean, it's one of Google's official languages for development. That says something.
+
+And its development speed is also a great plus for any project that needs to deliver things *yesterday*.
+
+So Python is your rock. You can't really go wrong with choosing Python.
+
+Just remember the Camel analogy: it's not very fast, but it will get you far.
