@@ -138,6 +138,7 @@ To be concise, we'll name the most prominent.
 1. Not the fastest car in the race
 2. Wait, there's Python 2 and 3?
 3. \_\_init\_\_ and other fun things
+4. Interpreted
 
 ### Speed of a camel
 
@@ -163,6 +164,16 @@ Why exactly is the function to auto-convert a class to a string called "\_\_str\
 These and other mysterious questions have been very annoying to people who, sure, found the answer to whatever they were looking for quite quickly upon searching, and then groaned loudly.
 
 Because let's be honest, that's not the most intuitive and readable thing...
+
+### Python is interpreted
+
+This one is both a blessing and a curse.
+
+A blessing because it means Python can run on any platform that has an interpreter implemented for it with next to no modification.
+
+A curse because it not only makes the language slower (as discussed) due to its overhead, but it *requires* your users to have python installed. Which sucks.
+
+This is probably why Python has been mostly used on things that are hidden from the standard user (servers or advanced user apps).
 
 ## So... When Should I Use Python?
 
