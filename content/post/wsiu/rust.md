@@ -6,6 +6,8 @@ tags = ["When Should I Use","Rust"]
 
 +++
 
+**DISCLAIMER**: *I don't claim to be an expert on this language, so I may have made mistakes. If there is anything you would say differently or anything that is just plain wrong, please open an issue on [Github](https://github.com/kenan-rhoton/OneTrueWayHugo)*
+
 [Rust](https://github.com/rust-lang/rust) is an amazing language.
 
 True, I say every language is amazing (although begrudgingly with JavaScript), so that may not mean much, but Rust is something special.

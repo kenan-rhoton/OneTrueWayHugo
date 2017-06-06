@@ -6,6 +6,8 @@ tags = ["When Should I Use","Go"]
 
 +++
 
+**DISCLAIMER**: *I don't claim to be an expert on this language, so I may have made mistakes. If there is anything you would say differently or anything that is just plain wrong, please open an issue on [Github](https://github.com/kenan-rhoton/OneTrueWayHugo)*
+
 [Go](https://github.com/golang/go) is a language that many people (yet not enough) are talking about.
 
 Yes, it has the interesting origin of basically being designed by Google to solve Google's problems.

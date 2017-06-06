@@ -6,6 +6,8 @@ tags = ["When Should I Use","Python"]
 
 +++
 
+**DISCLAIMER**: *I don't claim to be an expert on this language, so I may have made mistakes. If there is anything you would say differently or anything that is just plain wrong, please open an issue on [Github](https://github.com/kenan-rhoton/OneTrueWayHugo)*
+
 [Python](https://python.org) is a beautiful language.
 
 Every language does have some kind of beauty to it (except for perhaps JavaScript), but Python really drives home the message that simplicity can be powerful.
