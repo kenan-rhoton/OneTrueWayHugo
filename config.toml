@@ -1,6 +1,6 @@
 baseurl = "https://kenan-rhoton.github.io"
 languageCode = "en-us"
-title = "One True Way"
+title = "Hype-Driven Development"
 theme = "hugo-steam-theme"
 disqusShortname = ""
 # Enable Google Analytics be inserting your tracking code
@@ -9,8 +9,8 @@ googleAnalytics = ""
 paginate = 10
 
 [params]
-	title = "One True Way"
-	subtitle = "The different approaches to development"
+	title = "Hype-Driven Development"
+	subtitle = "New stuff in Software Development"
 	copyright = "Released under the MIT license."
 
 	# You can choose between green, orange, red and blue.
@@ -25,7 +25,7 @@ paginate = 10
 	# feel free to add a few information about you and your website.
 	name = "Kenan Rhoton"
 	bio = "programmer - blogger"
-	description = "A blog where we discuss the Way of doing things"
+	description = "The new, the old and the ugly"
 	
 	# Link your social networks (optional)
 	location = ""
