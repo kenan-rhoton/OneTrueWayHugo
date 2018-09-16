@@ -6,7 +6,7 @@ tags = ["When Should I Use","Python"]
 
 +++
 
-**DISCLAIMER**: *I don't claim to be an expert on this language, so I may have made mistakes. If there is anything you would say differently or anything that is just plain wrong, please open an issue on [Github](https://github.com/kenan-rhoton/OneTrueWayHugo)*
+**DISCLAIMER**: *I don't claim to be an expert on this language, so I may have made mistakes. If there is anything you would say differently or anything that is just plain wrong, please open an issue on [Github](https://github.com/kenan-rhoton/kenan-rhoton.github.io)*
 
 [Python](https://python.org) is a beautiful language.
 
